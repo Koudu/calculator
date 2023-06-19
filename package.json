@@ -1,0 +1,19 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Koudu/calculator.git"
+  },
+  "author": "Koudu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Koudu/calculator/issues"
+  },
+  "homepage": "https://github.com/Koudu/calculator#readme"
+}
