@@ -22,7 +22,6 @@ import "./style.css";
 //     }
 // }
 
-
 // btn.addEventListener("click", click)
 // btn2?.addEventListener("click", () => {
 //     dialog?.classList.remove("active");

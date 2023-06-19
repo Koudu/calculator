@@ -1,6 +1,6 @@
 {
-    "presets": [
-      ["@babel/preset-env", { "targets": { "ie": "11", "node": "current" } }]
-    ],
-    "plugins": [["@babel/plugin-transform-runtime"]]
-  }
+  "presets": [
+    ["@babel/preset-env", { "targets": { "ie": "11", "node": "current" } }]
+  ],
+  "plugins": [["@babel/plugin-transform-runtime"]]
+}

@@ -1,38 +1,32 @@
 {
-    "plugins": ["prettier", "import"],
-    "env": {
-      "browser": true,
-      "es2021": true
-    },
-    "parser": "@typescript-eslint/parser",
-    "extends": [
-      "airbnb-base",
-      "plugin:prettier/recommended",
-      "prettier",
-      "plugin:jest/recommended"
-    ],
-    "parserOptions": {
-      "ecmaVersion": 12,
-      "sourceType": "module"
-    },
-    "ignorePatterns": ["dist/**/*.js"],
-    "rules": {
-      "no-param-reassign": [2, { "props": false }],
-      "import/no-unresolved": "off", // https://github.com/typescript-eslint/typescript-eslint/issues/1624
-      "import/extensions": ["warn", "never"], // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/extensions.md
-      "import/prefer-default-export": "off",
-      "no-new": "off",
-      "prettier/prettier": "error",
-      "no-var": "error",
-      "semi": "error",
-      "indent": "error",
-      "no-multi-spaces": "error",
-      "space-in-parens": "error",
-      "no-multiple-empty-lines": "error",
-      "prefer-const": "error",
-      "no-use-before-define": "error",
-      "no-console": "off",
-      "no-alert": "off",
-      "no-restricted-syntax": "off"
-    }
+  "plugins": ["prettier", "import"],
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["airbnb-base", "plugin:prettier/recommended", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "ignorePatterns": ["dist/**/*.js"],
+  "rules": {
+    "no-param-reassign": [2, { "props": false }],
+    "import/no-unresolved": "off", // https://github.com/typescript-eslint/typescript-eslint/issues/1624
+    "import/extensions": ["warn", "never"], // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/extensions.md
+    "import/prefer-default-export": "off",
+    "no-new": "off",
+    "prettier/prettier": "error",
+    "no-var": "error",
+    "semi": "error",
+    "indent": "error",
+    "no-multi-spaces": "error",
+    "space-in-parens": "error",
+    "no-multiple-empty-lines": "error",
+    "prefer-const": "error",
+    "no-use-before-define": "error",
+    "no-console": "off",
+    "no-alert": "off",
+    "no-restricted-syntax": "off"
   }
+}
