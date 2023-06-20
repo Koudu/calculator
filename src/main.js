@@ -1,5 +1,22 @@
 import "./style.css";
 
+const body = document.querySelector("body");
+const settingsPanel = document.getElementById("settings-panel");
+
+body?.addEventListener("click", (e) => {
+  const name = e.target.getAttribute("name");
+  if (name === "settings-btn" && settingsPanel) {
+    if (settingsPanel?.classList.contains("_inactive")) {
+      settingsPanel.classList.remove("_inactive");
+      settingsPanel.classList.add("_active");
+      return;
+    }
+    settingsPanel.classList.add("_inactive");
+    settingsPanel.classList.remove("_active");
+  }
+});
+
+
 // const arr=[8, 1,4, 11, 7,9, 9];
 // console.log(arr.sort((a, b) => a - b));
 

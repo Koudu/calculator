@@ -3,38 +3,62 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no"/>
   </head>
   <body>
+    
     <div class="calc">
+      <div class="setting-block"> 
+        <span>Калькулятор</span>
+        <div class="setting" name="settings-btn">
+          <img src="./icons/settings-icon.svg" name="settings-btn" />
+        </div>
+      </div>
       <div class="calc-screen">
-        <p>0</p>
+          <p>0</p>
       </div>
 
       <div class="button">
-        <div class="btn ac bg-grey">ac</div>
-        <div class="btn plus-minus bg-grey">+/-</div>
-        <div class="btn percent bg-grey">%</div>
-        <div class="btn division bg-orange">/</div>
 
-        <div class="btn seven">7</div>
-        <div class="btn eigth">8</div>
-        <div class="btn nine">9</div>
-        <div class="btn myltiply bg-orange">x</div>
+        <div class="btn ac bg-grey" name="ac">ac</div>
+        <div class="btn plus-minus bg-grey" name="+/-">+/-</div>
+        <div class="btn percent bg-grey" name="%">%</div>
+        <div class="btn division bg-orange" name="/">/</div>
 
-        <div class="btn four">4</div>
-        <div class="btn five">5</div>
-        <div class="btn six">6</div>
-        <div class="btn minus bg-orange">-</div>
+        <div class="btn seven" name="7">7</div>
+        <div class="btn eigth" name="8">8</div>
+        <div class="btn nine" name="9">9</div>
+        <div class="btn myltiply bg-orange" name="x">x</div>
 
-        <div class="btn one">1</div>
-        <div class="btn two">2</div>
-        <div class="btn three">3</div>
-        <div class="btn plus bg-orange">+</div>
+        <div class="btn four" name="4">4</div>
+        <div class="btn five" name="5">5</div>
+        <div class="btn six" name="6">6</div>
+        <div class="btn minus bg-orange" name="-">-</div>
 
-        <div class="btn zero">0</div>
-        <div class="btn dot">.</div>
-        <div class="btn equal bg-orange">=</div>
+        <div class="btn one" name="1">1</div>
+        <div class="btn two" name="2">2</div>
+        <div class="btn three" name="3">3</div>
+        <div class="btn plus bg-orange" name="+">+</div>
+
+        <div class="btn zero" name="0">0</div>
+        <div class="btn dot" name=".">.</div>
+        <div class="btn equal bg-orange" name="=">=</div>
       </div>
+      
+      <aside id="settings-panel" class="settings-menu _inactive">
+
+        <div class="block-panel"></div>
+
+        <nav class="light-theme">
+          <img src="./icons/sun-icon.svg" name="sun-btn" />
+          <div>Светлая тема</div>
+        </nav>
+        <nav class="dark-theme">
+          <img src="./icons/moon-icon.svg" name="dark-btn" />
+          <div class="dark-text">Темная тема</div>
+        </nav>
+        
+      </aside>
     </div>
   </body>
 </html>
