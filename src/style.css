@@ -75,7 +75,7 @@
 .btn {
     width: 60px;
     height: 60px;
-    background: #333;
+    background: #272727;
     border-radius: 50%;
     line-height: 60px;
     text-align: center;
@@ -155,7 +155,7 @@
 }
 
 .navi-btn:active {
-  filter: brightness(60%);
+  filter: brightness(70%);
 } 
 
 .navigation-panel img {
