@@ -1,5 +1,3 @@
-
-
 .calc {
   margin: 50px auto;
   max-width: 300px;
@@ -135,7 +133,7 @@
 } 
 
 .btn.bg-grey.dark-them {
-    background: #cecdcd;
+    background: #8f8e8e;
 }
 
 .btn.bg-grey.light-them {
@@ -232,10 +230,6 @@
 
 .navi-btn * {
     pointer-events: none;
-}
-
-.navi-btn:hover {
-  filter: brightness(150%);
 }
 
 .navi-btn:active {
