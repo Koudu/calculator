@@ -112,7 +112,6 @@ body?.addEventListener("click", (e) => {
   }
 });
 
-
 // const arr=[8, 1,4, 11, 7,9, 9];
 // console.log(arr.sort((a, b) => a - b));
 
