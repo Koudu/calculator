@@ -1,9 +1,4 @@
-const assetUrls = [
-  "index.html",
-  "/js/app.js",
-  "/css/styles.css",
-  "offline.html",
-];
+const assetUrls = ["index.html", "script.js"];
 const staticCacheName = "s-app-v3";
 /* eslint-disable */
 self.addEventListener("install", async (event) => {
