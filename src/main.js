@@ -11,35 +11,72 @@ const action = ["-", "+", "x", "/"];
 const out = document.querySelector(".calc-screen p");
 
 function clearAll() {
-  let first = "";
-  let second = "";
-  let sign = "";
-  let finish = false;
+  first = "";
+  second = "";
+  sign = "";
+  finish = false;
   out.textContent = 0;
 }
 
-document.querySelector(".ac").onclick ;
+function finishCalc() {
+  second = "";
+  sign = "";
+}
 
-document.querySelector(".button").onclick = (event) => {
-  if(!event.target.classList.contains("btn")) return;
-  if(event.target.classList.contains("ac")) return;
+
+function PlusMinus() {
+  if (second) {
+    second = `${Number(second) * -1}`;
+    out.textContent = second;
+    return;
+  }
+  if (sign) {
+    return;
+  }
+  if (first) {
+    first = `${Number(first) * -1}`;
+    out.textContent = first;
+  }
+}
+
+function clearDigit(nmbr) {
+  let result = nmbr.slice(0, nmbr.length - 1);
+  result = result === "-" ? "" : result;
+  return result;
+}
+
+function clearBack() {
+  if (second !== "") {
+    second = clearDigit(second);
+    out.textContent = second === "" ? sign : second;
+    return;
+  }
+  if (sign !== "") {
+    sign = "";
+    out.textContent = first;
+    return;
+  }
+  if (first !== "") {
+    first = clearDigit(first);
+    out.textContent = first === "" ? 0 : first;
+    return;
+  }
+  out.textContent = 0;
+}
+
+function calculate(event) {
+  if (!event.target.classList.contains("btn")) return;
+  if (event.target.classList.contains("ac")) return;
+
   out.textContent = "";
   const key = event.target.textContent;
 
   if (digit.includes(key)) {
-    if(second === "" && sign === ""){
-      first+=key;
+    if (second === "" && sign === "") {
+      first += key;
       console.log(first, second, sign);
       out.textContent = first;
-    }
-
-    else if (first!=="" && second!=="" && finish){
-      // second = key;
-      // finish = false;
-      // out.textContent = second;
-    }
-
-    else{
+    } else {
       second += key;
       out.textContent = second;
     }
@@ -56,15 +93,20 @@ document.querySelector(".button").onclick = (event) => {
 
   if (key === "=") {
     if (second === "") second = first;
-    switch(sign) {
+    const firstDigit = Number(first);
+    const secondDigit = Number(second);
+    switch (sign) {
       case "+":
-        first = (+first) + (+second);
+        first = `${firstDigit + secondDigit}`;
+        finishCalc();
         break;
       case "-":
-        first = first - second;
+        first = `${firstDigit - secondDigit}`;
+        finishCalc();
         break;
       case "x":
-        first = first * second;
+        first = `${firstDigit * secondDigit}`;
+        finishCalc();
         break;
       case "/":
         if (second === 0) {
@@ -74,14 +116,17 @@ document.querySelector(".button").onclick = (event) => {
           sign = "";
           return;
         }
-        first = first / second;
+        first = `${firstDigit / secondDigit}`;
+        finishCalc();
+        break;
+      default:
         break;
     }
     finish = true;
     out.textContent = first;
     console.table(first, second, sign);
   }
-};
+}
 
 const body = document.querySelector("body");
 const settingsPanel = document.getElementById("settings-panel");
@@ -96,20 +141,36 @@ body?.addEventListener("click", (e) => {
     }
     settingsPanel.classList.add("_inactive");
     settingsPanel.classList.remove("_active");
+    return;
   }
-  console.log(name);
   if (name === "light-theme-btn") {
     document.querySelectorAll(".dark-them").forEach((el) => {
       el.classList.remove("dark-them");
       el.classList.add("light-them");
     });
+    return;
   }
   if (name === "dark-theme-btn") {
     document.querySelectorAll(".light-them").forEach((el) => {
       el.classList.remove("light-them");
       el.classList.add("dark-them");
     });
+    return;
   }
+  if (name === "del") {
+    clearBack();
+    return;
+  }
+  if (name === "ac") {
+    clearAll();
+    return;
+  }
+
+  if (name === "+/-") {
+    PlusMinus();
+    return;
+  }
+  calculate(e);
 });
 
 // const arr=[8, 1,4, 11, 7,9, 9];
