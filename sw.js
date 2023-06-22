@@ -1,0 +1,1 @@
+const assetUrls=["index.html","/js/app.js","/css/styles.css","offline.html"],staticCacheName="s-app-v3";self.addEventListener("install",(async s=>{const a=await caches.open("s-app-v3");await a.addAll(assetUrls)})),self.addEventListener("activate",(async s=>{const a=await caches.keys();await Promise.all(a.filter((s=>"s-app-v3"!==s)).map((s=>caches.delete(s))))}));
