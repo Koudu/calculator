@@ -1,7 +1,7 @@
 .calc {
   margin: 0px auto;
   max-width: 350px;
-  height: 660px;
+  height: 690px;
   border-radius: 20px;
   font-family: Arial;
   padding: 18px;
@@ -21,7 +21,7 @@
 
 .setting-block {
   max-width: 300px;
-  height: 40px;
+  height: 100px;
   line-height: 40px;
   text-align: center;
   font-size: 1.4rem;
