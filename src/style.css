@@ -20,19 +20,19 @@
 }
 
 .setting-block {
-  max-width: 300px;
-  height: 100px;
-  line-height: 40px;
+  max-width: 350px;
+  height: 130px;
+  line-height: 50px;
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   cursor: pointer;
   user-select: none;
   position: relative;
 }
 .setting {
   margin: flex;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   line-height: 40px;
   text-align: center;
   font-size: 1.2rem;
@@ -61,7 +61,7 @@
 }
 
 .calc-screen {
-  height: 60px;
+  height: 100px;
   padding: 10px 0;
   margin-bottom: 25px;
   display: flex;
@@ -74,7 +74,7 @@
   cursor: pointer;
   user-select: none;
   text-align: right;
-  font-size: 4rem;
+  font-size: 5.5rem;
   margin: 0;
 }
 
@@ -91,12 +91,12 @@
 }
 
 .btn {
-  width: 60px;
-  height: 60px;
+  width: 75px;
+  height: 75px;
   border-radius: 50%;
-  line-height: 60px;
+  line-height: 75px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
   cursor: pointer;
   user-select: none;
 }
@@ -150,8 +150,8 @@
 .settings-menu {
   border-radius: 20px;
   position: absolute;
-  width: 250px;
-  height: 536px;
+  width: 285px;
+  height: 746px;
   top: 0;
   left: 0;
 }
@@ -200,8 +200,8 @@
   background-position: center;
   background-size: cover;
   display: inline-block;
-  width: 35px;
-  height: 35px;
+  width: 50px;
+  height: 50px;
 }
 
 .sun-btn.dark-them {
@@ -215,8 +215,8 @@
   background-position: center;
   background-size: cover;
   display: inline-block;
-  width: 35px;
-  height: 35px;
+  width: 50px;
+  height: 50px;
 }
 
 .moon-btn.dark-them {
