@@ -254,6 +254,23 @@
 .calc-normal.light-them {
   background-image: url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.0' encoding='utf-8'?%3e%3c!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --%3e%3csvg width='800px' height='800px' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M15.5 8.25H8.5C8.22 8.25 8 8.03 8 7.75V6.25C8 5.97 8.22 5.75 8.5 5.75H15.5C15.78 5.75 16 5.97 16 6.25V7.75C16 8.03 15.78 8.25 15.5 8.25ZM16 11.25V10.25C16 9.97 15.78 9.75 15.5 9.75H14.5C14.22 9.75 14 9.97 14 10.25V11.25C14 11.53 14.22 11.75 14.5 11.75H15.5C15.78 11.75 16 11.53 16 11.25ZM10 11.25V10.25C10 9.97 9.78 9.75 9.5 9.75H8.5C8.22 9.75 8 9.97 8 10.25V11.25C8 11.53 8.22 11.75 8.5 11.75H9.5C9.78 11.75 10 11.53 10 11.25ZM13 11.25V10.25C13 9.97 12.78 9.75 12.5 9.75H11.5C11.22 9.75 11 9.97 11 10.25V11.25C11 11.53 11.22 11.75 11.5 11.75H12.5C12.78 11.75 13 11.53 13 11.25ZM16 14.5V13.5C16 13.22 15.78 13 15.5 13H14.5C14.22 13 14 13.22 14 13.5V14.5C14 14.78 14.22 15 14.5 15H15.5C15.78 15 16 14.78 16 14.5ZM10 14.5V13.5C10 13.22 9.78 13 9.5 13H8.5C8.22 13 8 13.22 8 13.5V14.5C8 14.78 8.22 15 8.5 15H9.5C9.78 15 10 14.78 10 14.5ZM13 14.5V13.5C13 13.22 12.78 13 12.5 13H11.5C11.22 13 11 13.22 11 13.5V14.5C11 14.78 11.22 15 11.5 15H12.5C12.78 15 13 14.78 13 14.5ZM16 17.75V16.75C16 16.47 15.78 16.25 15.5 16.25H14.5C14.22 16.25 14 16.47 14 16.75V17.75C14 18.03 14.22 18.25 14.5 18.25H15.5C15.78 18.25 16 18.03 16 17.75ZM13 17.75V16.75C13 16.47 12.78 16.25 12.5 16.25H8.5C8.22 16.25 8 16.47 8 16.75V17.75C8 18.03 8.22 18.25 8.5 18.25H12.5C12.78 18.25 13 18.03 13 17.75ZM19.25 19.5V4.5C19.25 3.26 18.24 2.25 17 2.25H7C5.76 2.25 4.75 3.26 4.75 4.5V19.5C4.75 20.74 5.76 21.75 7 21.75H17C18.24 21.75 19.25 20.74 19.25 19.5ZM17 3.75C17.41 3.75 17.75 4.09 17.75 4.5V19.5C17.75 19.91 17.41 20.25 17 20.25H7C6.59 20.25 6.25 19.91 6.25 19.5V4.5C6.25 4.09 6.59 3.75 7 3.75H17Z' fill='%23000000'/%3e%3c/svg%3e");
 }
+
+.calc-watch {
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+.calc-watch.dark-them {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.0' encoding='utf-8'?%3e%3c!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --%3e%3csvg width='800px' height='800px' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12 9.5V12L13.5 13.5' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3ccircle cx='12' cy='12' r='6' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M8.5 17L8.78101 19.2481C8.90612 20.2489 9.75692 21 10.7656 21H13.2344C14.2431 21 15.0939 20.2489 15.219 19.2481L15.5 17' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M15.5 7L15.219 4.75193C15.0939 3.75107 14.2431 3 13.2344 3L10.7656 3C9.75691 3 8.90611 3.75107 8.78101 4.75193L8.5 7' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e");
+}
+
+.calc-watch.light-them {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.0' encoding='utf-8'?%3e%3c!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --%3e%3csvg width='800px' height='800px' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12 9.5V12L13.5 13.5' stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3ccircle cx='12' cy='12' r='6' stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M8.5 17L8.78101 19.2481C8.90612 20.2489 9.75692 21 10.7656 21H13.2344C14.2431 21 15.0939 20.2489 15.219 19.2481L15.5 17' stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M15.5 7L15.219 4.75193C15.0939 3.75107 14.2431 3 13.2344 3L10.7656 3C9.75691 3 8.90611 3.75107 8.78101 4.75193L8.5 7' stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e");
+}
+
 /* body {
     height: 700px;
     
