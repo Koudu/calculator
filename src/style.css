@@ -303,7 +303,7 @@
   background: #3f3e3e;
 }
 
-.time-p1 {
+.timep {
   cursor: pointer;
   user-select: none;
   text-align: right;
@@ -311,31 +311,15 @@
   margin: 0;
 }
 
-.time-p3 {
-  cursor: pointer;
-  user-select: none;
-  text-align: right;
-  font-size: 3.5rem;
-  margin: 0;
-}
-
-.time-p2 {
-  cursor: pointer;
-  user-select: none;
-  text-align: right;
-  font-size: 3.5rem;
-  margin: 0;
-}
-
-time-p1._active {
+.timep._active {
   opacity: 100;
   transform: translateX(0);
   transition: transform 0ms, opacity 0ms;
 }
-.time-p1._inactive {
+.timep._inactive {
   opacity: 0;
   transform: translateX(-100%);
-  transition: transform 0ms, opacity 0ms;
+  transition: transform 0ms, opacity0ms;
 }
 /* body {
     height: 700px;

@@ -101,7 +101,12 @@ function calculate(event) {
     return;
   }
 
-  if (action.includes(key)) {
+  if (first === "" && second === "") {
+    out.textContent = 0;
+    return;
+  }
+
+  if (action.includes(key)) {0
     sign = key;
     out.textContent = sign;
     console.log(sign);
@@ -158,6 +163,20 @@ body?.addEventListener("click", (e) => {
     }
     settingsPanel.classList.add("_inactive");
     settingsPanel.classList.remove("_active");
+    return;
+  }
+  const body = document.querySelector("body");
+  const TimeP = document.getElementById("time");
+
+  const noname = e.target.getAttribute("name");
+  if (noname === "watch-btn" && TimeP) {
+    if (TimeP?.classList.contains("_inactive")) {
+      TimeP.classList.remove("_inactive");
+      TimeP.classList.add("_active");
+      return;
+    }
+    TimeP.classList.add("_inactive");
+    TimeP.classList.remove("_active");
     return;
   }
   if (name === "light-theme-btn") {
