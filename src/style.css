@@ -70,7 +70,7 @@
   overflow: hidden;
 }
 
-.calc-screen p {
+.normal-p {
   cursor: pointer;
   user-select: none;
   text-align: right;
@@ -183,6 +183,14 @@
   padding: 0 8px;
 }
 
+.navigation-panel hr {
+  margin: 16px 16px;
+}
+
+.hidden {
+  display: none;
+}
+
 .navi-btn {
   display: flex;
   align-items: center;
@@ -271,6 +279,64 @@
   background-image: url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.0' encoding='utf-8'?%3e%3c!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --%3e%3csvg width='800px' height='800px' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12 9.5V12L13.5 13.5' stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3ccircle cx='12' cy='12' r='6' stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M8.5 17L8.78101 19.2481C8.90612 20.2489 9.75692 21 10.7656 21H13.2344C14.2431 21 15.0939 20.2489 15.219 19.2481L15.5 17' stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M15.5 7L15.219 4.75193C15.0939 3.75107 14.2431 3 13.2344 3L10.7656 3C9.75691 3 8.90611 3.75107 8.78101 4.75193L8.5 7' stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e");
 }
 
+.calc-time.dark-them {
+  background: #3f3e3e;
+  color: #fff;
+}
+
+.calc-time.light-them {
+  background: #dad9d9;
+  color: #000000;
+}
+
+.button-time {
+  display: grid;
+  grid-template-areas:
+    "seven eight nine empty"
+    "four five siz ac"
+    "one two three del"
+    "zero zero dot equal";
+  grid-gap: 7px;
+  justify-items: center;
+}
+.btn-empty.dark-them {
+  background: #3f3e3e;
+}
+
+.time-p1 {
+  cursor: pointer;
+  user-select: none;
+  text-align: right;
+  font-size: 3.5rem;
+  margin: 0;
+}
+
+.time-p3 {
+  cursor: pointer;
+  user-select: none;
+  text-align: right;
+  font-size: 3.5rem;
+  margin: 0;
+}
+
+.time-p2 {
+  cursor: pointer;
+  user-select: none;
+  text-align: right;
+  font-size: 3.5rem;
+  margin: 0;
+}
+
+time-p1._active {
+  opacity: 100;
+  transform: translateX(0);
+  transition: transform 0ms, opacity 0ms;
+}
+.time-p1._inactive {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: transform 0ms, opacity 0ms;
+}
 /* body {
     height: 700px;
     

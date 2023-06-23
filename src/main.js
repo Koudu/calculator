@@ -74,6 +74,13 @@ function clearBack() {
   out.textContent = 0;
 }
 
+function addDigit(origin, newChar) {
+  if (origin.length >= 7) {
+    return origin;
+  }
+  return origin + newChar;
+}
+
 function calculate(event) {
   if (!event.target.classList.contains("btn")) return;
   if (event.target.classList.contains("ac")) return;
@@ -83,11 +90,11 @@ function calculate(event) {
 
   if (digit.includes(key)) {
     if (second === "" && sign === "") {
-      first += key;
+      first = addDigit(first, key);
       console.log(first, second, sign);
       out.textContent = first;
     } else {
-      second += key;
+      second = addDigit(first, key);
       out.textContent = second;
     }
     console.table(first, second, sign);
@@ -167,6 +174,27 @@ body?.addEventListener("click", (e) => {
     });
     return;
   }
+  
+  if (name === "watch-btn") {
+    document.querySelectorAll(".calc__content").forEach((el) => {
+      if (el.classList.contains("_time")) {
+        el.classList.remove("hidden");
+      } else {
+        el.classList.add("hidden");
+      }
+    });
+  }
+
+  if (name === "normal-btn") {
+    document.querySelectorAll(".calc__content").forEach((el) => {
+      if (el.classList.contains("_default")) {
+        el.classList.remove("hidden");
+      } else {
+        el.classList.add("hidden");
+      }
+    });
+  }
+
   if (name === "del") {
     clearBack();
     return;
