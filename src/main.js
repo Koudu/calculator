@@ -152,6 +152,7 @@ function calculate(event) {
 
 const body = document.querySelector("body");
 const settingsPanel = document.getElementById("settings-panel");
+const TimeP = document.getElementById("time");
 
 body?.addEventListener("click", (e) => {
   const name = e.target.getAttribute("name");
@@ -165,8 +166,6 @@ body?.addEventListener("click", (e) => {
     settingsPanel.classList.remove("_active");
     return;
   }
-  const body = document.querySelector("body");
-  const TimeP = document.getElementById("time");
 
   const noname = e.target.getAttribute("name");
   if (noname === "watch-btn" && TimeP) {
@@ -179,6 +178,7 @@ body?.addEventListener("click", (e) => {
     TimeP.classList.remove("_active");
     return;
   }
+  
   if (name === "light-theme-btn") {
     document.querySelectorAll(".dark-them").forEach((el) => {
       el.classList.remove("dark-them");

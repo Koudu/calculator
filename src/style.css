@@ -21,7 +21,7 @@
 
 .setting-block {
   max-width: 350px;
-  height: 130px;
+  height: 40px;
   line-height: 50px;
   text-align: center;
   font-size: 1.5rem;
@@ -61,7 +61,7 @@
 }
 
 .calc-screen {
-  height: 100px;
+  height: 200px;
   padding: 10px 0;
   margin-bottom: 25px;
   display: flex;
@@ -289,7 +289,16 @@
   color: #000000;
 }
 
+.calc-screen-time1 {
+  margin: 50px auto;
+}
+
+.hour {
+  margin: 100px auto;
+}
+
 .button-time {
+  margin: 77px auto;
   display: grid;
   grid-template-areas:
     "seven eight nine empty"
