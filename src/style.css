@@ -290,15 +290,15 @@
 }
 
 .calc-screen-time1 {
-  margin: 50px auto;
+  margin: 40px auto;
 }
 
 .hour {
-  margin: 100px auto;
+  margin: 90px auto;
 }
 
 .button-time {
-  margin: 77px auto;
+  margin: 7px auto;
   display: grid;
   grid-template-areas:
     "seven eight nine empty"
