@@ -106,7 +106,7 @@ function calculate(event) {
     return;
   }
 
-  if (action.includes(key)) {0
+  if (action.includes(key)) {
     sign = key;
     out.textContent = sign;
     console.log(sign);
