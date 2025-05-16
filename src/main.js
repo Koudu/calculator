@@ -94,7 +94,7 @@ function calculate(event) {
       console.log(first, second, sign);
       out.textContent = first;
     } else {
-      second = addDigit(first, key);
+      second = addDigit(second, key);
       out.textContent = second;
     }
     console.table(first, second, sign);
